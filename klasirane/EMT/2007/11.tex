@@ -1,0 +1,21 @@
+% ЕМТ 2007, XI клас — проверен LaTeX препис на липсващата задача 11.3 от официалните файлове в Klasirane.com.
+% Условия: https://klasirane.com/api/competitions/EMT/All/2007/11%20%D0%BA%D0%BB/probs
+% SHA-256 (условия): 796e09c9362f935721bd6c27eae1010f70254e48a48e1ae3a828fff2b08c72b6
+% Решения: https://klasirane.com/api/competitions/EMT/All/2007/11%20%D0%BA%D0%BB/sol
+% SHA-256 (решения): 923b29f0b6412e3cd98103bdd512372b34a4635de60f4283ec027b3e27a6e472
+% Mathpix Snip (условия): 3178c08e-f38f-4ec0-ad05-f2f75eca5201
+% Mathpix Snip (решения): 2bf7019e-c1c2-4125-b454-dbe1a307ac1f
+% Формулировката, решението и фигурата са сверени визуално с официалните PDF страници.
+% Mathpix разпознава символа за ъгъл като \Varangle; тук е предаден с еквивалентното и поддържано \angle.
+
+Задача 11.3. В триъгълник $ABC$ е прекарана ъглополовящата $CC_1$. Точките $P \in C_1B$, $Q \in BC$, $R \in AC$ и $S \in AC_1$ са такива, че $C_1P = PQ = QC$ и $CR = RS = SC_1$. Да се докаже, че $CC_1$ е ъглополовящата на $\angle SCP$.
+
+Решение. Да означим $\angle SCC_{1}=\varphi$, $\angle PCC_{1}=\psi$ и $\angle PC_{1}C=\delta$. От $\triangle PQC$ имаме $\cos \left(\frac{\gamma}{2}-\psi\right)=\frac{CP}{2CQ}$, а от синусовата теорема за $\triangle PC_{1}C$ получаваме $\frac{CP}{PC_{1}}=\frac{\sin \delta}{\sin \psi}$. Тъй като $CQ=QP=PC_{1}$, от горните равенства намираме $\cos \left(\frac{\gamma}{2}-\psi\right)\sin\psi=\frac{\sin\delta}{2}$. Аналогично от $\triangle SCR$ и $\triangle SC_{1}C$ получаваме $\cos \left(\frac{\gamma}{2}-\varphi\right)\sin\varphi=\frac{\sin\delta}{2}$.
+
+\includegraphics{emt-2007-grade-11-problem-3}
+
+Следователно
+$$
+\cos \left(\frac{\gamma}{2}-\psi\right)\sin\psi=\cos \left(\frac{\gamma}{2}-\varphi\right)\sin\varphi,
+$$
+откъдето $\sin\left(\frac{\gamma}{2}\right)+\sin\left(2\psi-\frac{\gamma}{2}\right)=\sin\left(\frac{\gamma}{2}\right)+\sin\left(2\varphi-\frac{\gamma}{2}\right)$, т.е. $2\varphi+2\psi-\gamma=180^\circ$ или $\varphi=\psi$. Тъй като $\gamma>\varphi+\psi$, то $2\varphi+2\psi-\gamma<\gamma<180^\circ$, т.е. първото равенство е невъзможно. Остава $\varphi=\psi$, което означава, че $CC_{1}$ е ъглополовяща на $\angle SCP$.
